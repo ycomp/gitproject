@@ -3,9 +3,68 @@
   <head>
     <!-- this is a test -->
     <style>
-      h1 {color: white;}
-      p {color:white}
-      body {background-color:#181a1b;}
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      .button-ytjoincopy {
+        background-color: white;
+        border-color: #2573d9;
+        border-style: solid;
+        border-width: 1px;
+        color: #2573d9;
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .button-ytjoincopy:hover {
+        background-color: #2573d9;
+        color: white;
+      }
+      .button-ytjoincopy:active {
+        opacity: 0.7;
+      }
+      .button-ytsubcopy {
+        background-color: #a20001;
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.13s;
+      }
+      .button-ytsubcopy:hover {
+        opacity: 0.76;
+      }
+      .button-ytsubcopy:active {
+        opacity: 0.4;
+      }
+      .button-tweetcopy {
+        background-color: #1b90ee;
+        color: white;
+        border: none;
+        margin-left: 8px;
+        height: 34px;
+        width: 70px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+      }
+      .button-tweetcopy:hover{
+        box-shadow: 0px 4px 7px #5c5c5c ;
+      }
+      body {
+        background-color: #181a1b;
+      }
       .div-2 {
         width: fit-content;
         height: fit-content;
@@ -28,13 +87,30 @@
   <body>
     <div-1 class="div-1">
       <h1>Content goes here.</h1>
-      <P> content pt2!! changes :o</P>
-        <div-2 class="div-2">
+      <p>content pt2!! changes :o</p>
+      <button
+        class="button-ytsubcopy"
+        title="Good Luck"
+        onclick="window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0', '_blank')"
+        type="button"
+      >
+        CLICK HERE
+      </button>
+      <button
+        class="button-ytjoincopy"
+        title="You need this"
+        onclick="window.open('https://www.mcdonalds.com/us/en-us/mcdonalds-careers.html', '_blank')"
+        type="button"
+      >
+        JOIN
+      </button>
+      <button class="button-tweetcopy">Tweet</button>
+      <div-2 class="div-2">
         <img
-        id="pic1"
-        src="https://i.ytimg.com/vi/NVuL7mLqT6g/maxresdefault.jpg"
-        alt="mf talking to a brick wall"
-        style="width: 25%; height: 25%"
+          id="pic1"
+          src="https://i.ytimg.com/vi/NVuL7mLqT6g/maxresdefault.jpg"
+          alt="mf talking to a brick wall"
+          style="width: 25%; height: 25%"
       /></div-2>
     </div-1>
   </body>
